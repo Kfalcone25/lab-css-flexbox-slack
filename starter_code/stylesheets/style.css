@@ -16,21 +16,21 @@ footer links grey: #454245
     list-style: none;
     text-decoration: none;
 }
-body {
-    max-width: 768px;
-}
+
 #topnav {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    padding: 1rem;
+    width: 95wv;
+
 }
+
 .brand-container {
     display: flex;
-    margin: 15px;
     padding: 1.3vw;
     background-color: black;
 }
+
 .brand-container img {
     width: 15vw;
     height: auto;
@@ -46,4 +46,64 @@ body {
     justify-content: space-between;
     padding: 0 15px;
     font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: red;
+        display: block;
+        max-width: 100%;
+    }
+
+    #landing-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #landing-header h1 {
+        font-size: 15rem;
+        text-align: center;
+        color: white;
+        background-color: #540B51
+    }
+
+    #landing-header p span {
+        font-size: 5rem;
+        color: #ECB12F
+    }
+
+    #landing-header p {
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+    }
+
+    #sign-in-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sign-in-up button {
+        margin: 30px 0px;
+    }
+
+    .google-button {
+        display: flex;
+        align-items: center;
+        background-color: lightblue;
+        height: 5vh;
+    }
+
+    .google-button img {
+        background-color: white;
+        height: 3.5vh;
+    }
+
+    .google-button span {
+        font-size: 3rem;
+        text-align: center;
+    }
 }
